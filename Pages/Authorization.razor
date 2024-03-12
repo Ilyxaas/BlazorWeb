@@ -1,0 +1,25 @@
+﻿@page "/authorization"
+
+<link href="BlazorApp.styles.css" rel="stylesheet" type="text/css">
+
+@using Microsoft.AspNetCore.Components.Web
+@using Microsoft.AspNetCore.Components.Forms
+
+<h2>Authorization Form</h2>
+
+<hr>
+<div>
+    <p>
+        Login:<br />
+        <InputText @bind-Value="authorization.login" />
+    </p>
+    <p>
+        Email:<br />
+        <InputText @bind-Value="authorization.Password" />
+    </p>
+</div>
+
+<hr />
+@code{
+    AuthorizationForms authorization = new AuthorizationForms();
+}

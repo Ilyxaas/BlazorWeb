@@ -1,0 +1,17 @@
+﻿.elementheader {
+    background-color: gray;
+    margin-bottom: 25px;
+    font-size: larger;
+    border-radius: 10px;
+    max-height: 300px;
+    max-width: 200px;
+    text-align: center;  
+}
+
+.a {
+    color: white;
+    text-decoration: none;
+}
+.footer {
+    background-color: blue;
+}

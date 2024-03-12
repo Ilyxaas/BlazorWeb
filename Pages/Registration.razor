@@ -1,0 +1,77 @@
+﻿@page "/registration"
+<link rel="stylesheet" href="/css/Registration.css">
+
+
+@using Microsoft.AspNetCore.Components.Web
+@using Microsoft.AspNetCore.Components.Forms
+@inject HttpClient httpClient
+
+
+<h2>registration Form</h2>
+
+<hr>
+<EditForm EditContext="editContext" OnSubmit="Submit">
+    <div>
+        <p>
+            Login:<br />
+            <InputText @bind-Value="registration.login" />
+        </p>
+        <p>
+            Email:<br />
+            <InputText @bind-Value="registration.email" />
+        </p>
+
+        <p>
+            Name:<br />
+            <InputText @bind-Value="registration.Name" />
+        </p>
+        <p>
+            Last Name:<br />
+            <InputText @bind-Value="registration.LastName" />
+        </p>
+        <p>
+            Age:<br />
+            <InputNumber min="1" @bind-Value="registration.Age" />
+        </p>
+        <p>
+            Password :<br />
+            <InputText type="password" placeholder="Password" @bind-Value="registration.Password" />
+        </p>
+        <p>
+            Password Repeat :<br />
+            <InputText type="password" placeholder="Password" @bind-Value="registration.PasswordRepetition" />
+        </p>
+        <p>
+            <InputRadioGroup @bind-Value="registration.Gender">
+                Gender: <br />
+                @foreach (var subject in Genders)
+                {
+                    <InputRadio Value="@subject" />@subject<br />
+                }
+            </InputRadioGroup>
+        </p>
+        <button type="submit">Create account</button>
+    </div>
+</EditForm>
+<hr />
+<h1>@message</h1>>
+
+@code{
+    EditContext? editContext;
+    RegistrationForms registration = new();
+    string? message = "";
+
+    async Task Submit()
+    {
+        var result = await httpClient.PostAsJsonAsync("api/registration", editContext);
+        message = await result.Content.ReadAsStringAsync();
+    }
+
+    protected override void OnInitialized()
+    {
+        editContext = new(registration);
+    }
+
+    List<string> Genders = new() { "Man", "Woman" };
+
+} 
