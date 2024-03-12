@@ -1,0 +1,12 @@
+/Users/ilya/Projects/BlazorProject/BlazorProject/Shared/bin/Debug/net7.0/BlazorProject.Shared.deps.json
+/Users/ilya/Projects/BlazorProject/BlazorProject/Shared/bin/Debug/net7.0/BlazorProject.Shared.dll
+/Users/ilya/Projects/BlazorProject/BlazorProject/Shared/bin/Debug/net7.0/BlazorProject.Shared.pdb
+/Users/ilya/Projects/BlazorProject/BlazorProject/Shared/obj/Debug/net7.0/BlazorProject.Shared.csproj.AssemblyReference.cache
+/Users/ilya/Projects/BlazorProject/BlazorProject/Shared/obj/Debug/net7.0/BlazorProject.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ilya/Projects/BlazorProject/BlazorProject/Shared/obj/Debug/net7.0/BlazorProject.Shared.AssemblyInfoInputs.cache
+/Users/ilya/Projects/BlazorProject/BlazorProject/Shared/obj/Debug/net7.0/BlazorProject.Shared.AssemblyInfo.cs
+/Users/ilya/Projects/BlazorProject/BlazorProject/Shared/obj/Debug/net7.0/BlazorProject.Shared.csproj.CoreCompileInputs.cache
+/Users/ilya/Projects/BlazorProject/BlazorProject/Shared/obj/Debug/net7.0/BlazorProject.Shared.dll
+/Users/ilya/Projects/BlazorProject/BlazorProject/Shared/obj/Debug/net7.0/refint/BlazorProject.Shared.dll
+/Users/ilya/Projects/BlazorProject/BlazorProject/Shared/obj/Debug/net7.0/BlazorProject.Shared.pdb
+/Users/ilya/Projects/BlazorProject/BlazorProject/Shared/obj/Debug/net7.0/ref/BlazorProject.Shared.dll
